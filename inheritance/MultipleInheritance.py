@@ -1,14 +1,12 @@
 class Demo1:
-    def disp1(self):
+    def disp1(slef):
         print("Inside disp1")
-class Demo2(Demo1):
-    def dips2(self):
+class Demo2:
+    def disp2(self):
         print("Inside disp2")
-class Demo3(Demo2):
-    def disp3(self):
-        print("Inside disp3")
+class Demo3(Demo1,Demo2):
+    pass
 
-d3 = Demo3()
-d3.disp1()
-d3.dips2()
-d3.disp3()
+d1 = Demo3()
+d1.disp1()
+d1.disp2()
